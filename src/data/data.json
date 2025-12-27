@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "scientific_name": "Rosa lucieae Franch. & Rochebr. ex Crép.",
+        "common_name": "Rosa",
+        "description": "A species of rose native to East Asia, known for its climbing habit and fragrant flowers.",
+        "image": "rose.jpg",
+        "date_added": "2024-06-15",
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "scientific_name": "Tulipa gesneriana L.",
+        "common_name": "Tulip",
+        "description": "A bulbous spring-flowering plant of the lily family, with boldly colored cup-shaped flowers.",
+        "image": "tulip.jpg",
+        "date_added": "2024-06-16",
+        "rating": 4.2
+    },
+    {
+        "id": 3,
+        "scientific_name": "Helianthus annuus L.",
+        "common_name": "Sunflower",
+        "description": "A tall annual forb of the daisy family, known for its large flower head and edible seeds.",
+        "image": "sunflower.jpg",
+        "date_added": "2024-06-17",
+        "rating": 4.7
+    }
+]
