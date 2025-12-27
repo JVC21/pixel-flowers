@@ -10,12 +10,12 @@ function FlowerCard({ flower }) {
 				<div className="flower-info flex flex-col max-w-74 px-10 pt-14 pb-6 justify-between">
 					<div>
 						<h2 className="flower-common-name cal-sans-regular tracking-wide text-neutral-700 text-4xl mb-2">{flower.common_name}</h2>
-						<p className="flower-scientific-name outfit-italic-regular text-neutral-500 text-sm mb-8">{flower.scientific_name}</p>
+						<p className="flower-scientific-name outfit-regular-italic text-neutral-500 text-sm mb-8">{flower.scientific_name}</p>
 						<p className="flower-description outfit-regular text-neutral-700 text-justify">{flower.description}</p>
 					</div>
 					<div className="flex flex-row justify-between">
 						<i class="fa-solid fa-angles-left text-neutral-800 text-lg"></i>
-						<p className="flower-date-added outfit-italic-bold text-neutral-800 text-sm text-right">{flower.date_added}</p>
+						<p className="flower-date-added dm-mono-medium-italic text-neutral-800 text-xs">{flower.date_added}</p>
 						{/* <p className="flower-rating outfit-bold text-neutral-800 mb-2">{flower.rating}</p> */}
 					</div>
 				</div>
