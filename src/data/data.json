@@ -2,7 +2,7 @@
     {
         "id": 1,
         "scientific_name": "Rosa lucieae Franch. & Rochebr. ex Crép.",
-        "common_name": "Rosa",
+        "common_name": "Rose",
         "description": "A species of rose native to East Asia, known for its climbing habit and fragrant flowers.",
         "image": "rose.jpg",
         "date_added": "2024-06-15",
@@ -25,5 +25,14 @@
         "image": "sunflower.jpg",
         "date_added": "2024-06-17",
         "rating": 4.7
+    },
+    {
+        "id": 4,
+        "scientific_name": "Epiphyllum oxypetalum (DC.) Haw.",
+        "common_name": "Queen of the Night Cereus",
+        "description": "A species of cactus known for its large, fragrant white flowers that bloom at night.",
+        "image": "queen_of_the_night_cereus.jpg",
+        "date_added": "2024-06-18",
+        "rating": 4.3
     }
 ]
