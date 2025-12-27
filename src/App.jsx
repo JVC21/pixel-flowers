@@ -6,6 +6,9 @@ function App() {
 	return (
 		<>
 			<FlowerCard flower={getFlowers()[0]} />
+			<FlowerCard flower={getFlowers()[1]} />
+			<FlowerCard flower={getFlowers()[2]} />
+			<FlowerCard flower={getFlowers()[3]} />
 		</>
 	)
 }
