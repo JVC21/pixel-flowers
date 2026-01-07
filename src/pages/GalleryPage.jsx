@@ -3,7 +3,7 @@ import GalleryButton from "../components/GalleryButton.jsx";
 import { getFlowers } from "../data/data-service.js"
 
 function GalleryPage() {
-    const flowersLength = 20;
+    const flowersLength = getFlowers().length;
 
     return (
         <div className="min-h-screen bg-neutral-300 px-16">
@@ -18,18 +18,18 @@ function GalleryPage() {
                 <GalleryButton className="col-start-4">Reload</GalleryButton>
                 <GalleryButton className="col-start-6">More</GalleryButton>
 
-                {flowersLength>= 1 ? <GalleryItem className="col-start-1 row-start-1 row-span-2 aspect-square">1</GalleryItem> : null}
-                {flowersLength>= 2 ? <GalleryItem className="col-start-3 row-start-1 row-span-2 aspect-square">2</GalleryItem> : null}
-                {flowersLength>= 3 ? <GalleryItem className="col-start-5 row-start-1 row-span-2 aspect-square">3</GalleryItem> : null}
-                {flowersLength>= 4 ? <GalleryItem className="col-start-7 row-start-1 row-span-2 aspect-square">4</GalleryItem> : null}
-                {flowersLength>= 21 ? <GalleryItem className="col-start-4 row-start-8 row-span-2 aspect-square">21</GalleryItem> : null}
+                {flowersLength>= 1 ? <GalleryItem flower={getFlowers()[0]} className="col-start-1 row-start-1 row-span-2 aspect-square" /> : null}
+                {flowersLength>= 2 ? <GalleryItem flower={getFlowers()[1]} className="col-start-3 row-start-1 row-span-2 aspect-square" /> : null}
+                {flowersLength>= 3 ? <GalleryItem flower={getFlowers()[2]} className="col-start-5 row-start-1 row-span-2 aspect-square" /> : null}
+                {flowersLength>= 4 ? <GalleryItem flower={getFlowers()[3]} className="col-start-7 row-start-1 row-span-2 aspect-square" /> : null}
+                {flowersLength>= 21 ? <GalleryItem flower={getFlowers()[20]} className="col-start-4 row-start-8 row-span-2 aspect-square" /> : null}
                 
                 {Array.from({ length: Math.min(16, flowersLength - 4) }).map((_, i) => (
-                    <GalleryItem className="row-span-2 aspect-square" key={i}>{i + 5}</GalleryItem>
+                    <GalleryItem flower={getFlowers()[i + 4]} className="row-span-2 aspect-square" key={i} />
                 ))}
 
                 {Array.from({ length: Math.min(19, flowersLength - 21) }).map((_, i) => (
-                    <GalleryItem className="row-span-2 aspect-square" key={i}>{i + 22}</GalleryItem>
+                    <GalleryItem flower={getFlowers()[i + 21]} className="row-span-2 aspect-square" key={i} />
                 ))}
 
             </div>
