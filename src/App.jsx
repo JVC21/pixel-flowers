@@ -6,7 +6,7 @@ function App() {
 	return (
 		<Routes>
 			<Route path="/" element={<GalleryPage />} />
-			<Route path="/flower" element={<FlowerPage />} />
+			<Route path="/flowers/:id" element={<FlowerPage />} />
 			{/* <Route path="/more" element={<MorePage />} /> */}
 		</Routes>
 
