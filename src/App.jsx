@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router"
-import CardPage from "./pages/CardPage.jsx"
+import FlowerPage from "./pages/FlowerPage.jsx"
 import GalleryPage from "./pages/GalleryPage.jsx"
 
 function App() {
 	return (
 		<Routes>
 			<Route path="/" element={<GalleryPage />} />
-			<Route path="/flower" element={<CardPage />} />
+			<Route path="/flower" element={<FlowerPage />} />
 			{/* <Route path="/more" element={<MorePage />} /> */}
 		</Routes>
 
