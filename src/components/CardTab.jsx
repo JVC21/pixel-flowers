@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import { twMerge } from "tailwind-merge";
+import clsx from "clsx"
+import { twMerge } from "tailwind-merge"
 
 function CardTab({ isOpen, setIsOpen }) {
     return (
@@ -27,7 +27,7 @@ function CardTab({ isOpen, setIsOpen }) {
         >
 			<i className="fa-solid fa-angle-down text-neutral-800 lg:-rotate-90 text-2xl pt-1 pb-0.5 m-3"></i>
 		</button>
-    );
+    )
 }
 
-export default CardTab;
+export default CardTab

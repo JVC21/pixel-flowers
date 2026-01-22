@@ -9,4 +9,4 @@ function NotFound({ title, message, icon, children }) {
     )
 }
 
-export default NotFound;
+export default NotFound

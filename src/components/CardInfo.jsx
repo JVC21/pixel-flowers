@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import { twMerge } from "tailwind-merge";
+import clsx from "clsx"
+import { twMerge } from "tailwind-merge"
 
 function CardInfo({ flower, isOpen }) {
     return (
@@ -32,7 +32,7 @@ function CardInfo({ flower, isOpen }) {
                 {/* <p className="outfit-bold text-neutral-800 mb-2">{flower.rating}</p> */}
             </div>
         </div>
-    );
+    )
 }
 
-export default CardInfo;
+export default CardInfo

@@ -1,9 +1,9 @@
-import GalleryItem from "../components/GalleryItem";
-import GalleryButton from "../components/GalleryButton.jsx";
-import { getFlowers } from "../data/data-service.js";
+import GalleryItem from "../components/GalleryItem"
+import GalleryButton from "../components/GalleryButton.jsx"
+import { getFlowers } from "../data/data-service.js"
 
 function GalleryPage() {
-    const flowersLength = getFlowers().length;
+    const flowersLength = getFlowers().length
 
     return (
         <div className="flex items-center justify-center min-h-screen px-0 lg:px-16">
@@ -24,7 +24,7 @@ function GalleryPage() {
                 ))}
             </div>
         </div>
-    );
+    )
 }
 
-export default GalleryPage;
+export default GalleryPage

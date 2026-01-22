@@ -1,5 +1,5 @@
-import flowersData from './data.json';
+import flowersData from './data.json'
 
 export function getFlowers() {
-	return flowersData;
+	return flowersData
 }

@@ -1,10 +1,10 @@
-import clsx from "clsx";
-import { twMerge } from "tailwind-merge";
+import clsx from "clsx"
+import { twMerge } from "tailwind-merge"
 
-const images = import.meta.glob('../assets/*.jpg', { eager: true, query: '?url', import: 'default' });
+const images = import.meta.glob('../assets/*.jpg', { eager: true, query: '?url', import: 'default' })
 
 function CardImage({ flower, isOpen, isPlaceholder = true }) {
-    const imageUrl = images[`../assets/${isPlaceholder ? '480x480.jpg' : flower.image}`];
+    const imageUrl = images[`../assets/${isPlaceholder ? '480x480.jpg' : flower.image}`]
 
     return (
         <img
@@ -27,7 +27,7 @@ function CardImage({ flower, isOpen, isPlaceholder = true }) {
                 "transition-all duration-300"
             ))}
         />
-    );
+    )
 }
 
-export default CardImage;
+export default CardImage
