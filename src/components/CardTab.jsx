@@ -1,7 +1,31 @@
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
+
 function CardTab({ isOpen, setIsOpen }) {
     return (
-        <button onClick={() => setIsOpen(!isOpen)} className={`flex justify-end bg-neutral-600 rounded-xl w-50 h-fit shadow-lg cursor-pointer absolute z-10 ${isOpen ? 'translate-x-92' : 'translate-x-48'} transition-all duration-300`}>
-			<i className="fa-solid fa-angle-right pt-1 text-2xl m-3 text-neutral-800"></i>
+        <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={twMerge(clsx(
+                // size: 18
+                // Base styles
+                "absolute flex flex-col justify-end bg-neutral-600 rounded-xl shadow-lg cursor-pointer z-10",
+                // Minimal screens
+                "h-50 translate-y-28",
+                isOpen && "translate-y-65",
+                // Medium screens
+                "md:translate-y-33",
+                isOpen && "md:translate-y-70",
+                // Large screens
+                "lg:flex-row lg:h-fit lg:w-50 lg:translate-x-40 lg:translate-y-0",
+                isOpen && "lg:translate-x-78",
+                // Extra large screens
+                "xl:translate-x-40",
+                isOpen && "xl:translate-x-92",
+                // Animation
+                "transition-all duration-300"
+            ))}
+        >
+			<i className="fa-solid fa-angle-down pt-1 pb-0.5 text-2xl m-3 text-neutral-800 lg:-rotate-90"></i>
 		</button>
     );
 }

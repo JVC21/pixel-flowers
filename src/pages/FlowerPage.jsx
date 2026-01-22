@@ -5,7 +5,7 @@ import { getFlowers } from "../data/data-service.js"
 function FlowerPage() {
     const { id } = useParams();
     return (
-        <div className="flex items-center justify-center min-h-screen bg-neutral-500">
+        <div className="flex items-center justify-center min-h-screen min-w-screen bg-neutral-500">
 			<Card flower={getFlowers()[id]} />
 		</div>
     );

@@ -1,10 +1,32 @@
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
+
 const images = import.meta.glob('../assets/*.jpg', { eager: true, query: '?url', import: 'default' });
 
 function CardImage({ flower, isOpen, isPlaceholder = true }) {
     const imageUrl = images[`../assets/${isPlaceholder ? '480x480.jpg' : flower.image}`];
 
     return (
-        <img src={imageUrl} alt={flower.common_name} className={`w-120 h-120 bg-neutral-400 shadow-lg z-30 ${isOpen ? 'rounded-l-xl' : 'rounded-xl'} transition-all duration-300`} />
+        <img
+            src={imageUrl}
+            alt={flower.common_name}
+            className={twMerge(clsx(
+                // Base styles
+                "bg-neutral-400 rounded-xl shadow-lg z-30",
+                // Minimal screens
+                "size-80",
+                isOpen && "rounded-none rounded-t-xl",
+                // Medium screens
+                "md:size-90",
+                // Large screens
+                "lg:size-105",
+                isOpen && "lg:rounded-none lg:rounded-l-xl",
+                // Extra large screens
+                "xl:size-120",
+                // Animation
+                "transition-all duration-300"
+            ))}
+        />
     );
 }
 
