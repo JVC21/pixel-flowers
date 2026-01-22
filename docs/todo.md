@@ -1,0 +1,4 @@
+- [ ] Change the text animation in the flower card
+- [ ] Refactor with clsx and twMerge
+- [ ] Connect to Firebase App (Cloud Firestore)
+- [ ] Select app icon
