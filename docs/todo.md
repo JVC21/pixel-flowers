@@ -2,3 +2,4 @@
 - [ ] Refactor with clsx and twMerge
 - [ ] Connect to Firebase App (Cloud Firestore)
 - [ ] Select app icon
+- [ ] Instead of using the pages, use the body for the bg color
