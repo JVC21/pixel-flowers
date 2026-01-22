@@ -19,13 +19,13 @@ function CardTab({ isOpen, setIsOpen }) {
                 "lg:flex-row lg:h-fit lg:w-50 lg:translate-x-40 lg:translate-y-0",
                 isOpen && "lg:translate-x-78",
                 // Extra large screens
-                "xl:translate-x-40",
+                "xl:translate-x-48",
                 isOpen && "xl:translate-x-92",
                 // Animation
                 "transition-all duration-300"
             ))}
         >
-			<i className="fa-solid fa-angle-down pt-1 pb-0.5 text-2xl m-3 text-neutral-800 lg:-rotate-90"></i>
+			<i className="fa-solid fa-angle-down text-neutral-800 lg:-rotate-90 text-2xl pt-1 pb-0.5 m-3"></i>
 		</button>
     );
 }

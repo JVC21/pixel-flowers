@@ -19,10 +19,9 @@ function GalleryPage() {
 
                 <div className="col-start-2 row-start-7 aspect-7/3 lg:col-start-3 xl:col-start-4"></div>
 
-                {Array.from({ length: 40}).map((_, i) => (
-                    <GalleryItem flower={getFlowers()[i]} className="row-span-2 aspect-square max-w-48" key={i} />
+                {getFlowers().map((flower, i) => (
+                    <GalleryItem flower={flower} className="row-span-2 aspect-square max-w-48" key={i} />
                 ))}
-
             </div>
         </div>
     );
