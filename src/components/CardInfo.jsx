@@ -19,9 +19,7 @@ function CardInfo({ flower, isOpen }) {
                 "xl:h-120 xl:px-10 xl:pt-14",
                 isOpen && "xl:w-80",
                 // Animation
-                isOpen
-                ? "transition-[width,height,opacity,transform] duration-[300ms,300ms,0ms,300ms]"
-                : "transition-[width,height,opacity,transform] duration-[300ms,300ms,0ms,300ms] delay-[0ms,0ms,300ms,0ms]"
+                "transition-all duration-300"
             ))}
         >
             <div className="">
