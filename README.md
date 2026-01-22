@@ -1,3 +1,3 @@
 # Pixel Flowers
 
-Una galería de plores pixeladas.
+Una galería de flores pixeladas.
