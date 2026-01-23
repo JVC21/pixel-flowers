@@ -10,11 +10,11 @@ function FlowerPage() {
 
     if (!flower)
         return <NotFound title="Flower Not Found" message="The flower you are looking for does not exist." icon={
-            <i className="fa-solid fa-seedling text-neutral-400"></i>
+            <i className="fa-solid fa-seedling"></i>
         } />
 
     return (
-        <div className="flex items-center justify-center min-h-screen min-w-screen bg-neutral-500 to-transparent">
+        <div className="flex items-center justify-center bg-canvas min-h-screen min-w-screen to-transparent">
             <BackButton />
             <Card flower={flower} />
         </div>

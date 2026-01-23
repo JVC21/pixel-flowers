@@ -13,7 +13,7 @@ function App() {
 				title="Page Not Found" 
 				message="The page you are looking for does not exist." 
 				icon={
-					<i className="fa-solid fa-exclamation text-neutral-400"></i>
+					<i className="fa-solid fa-exclamation"></i>
 				} 
 				/>
 			} />
