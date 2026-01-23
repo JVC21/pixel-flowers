@@ -9,7 +9,7 @@ function Card({ flower }) {
 
 	return (
 		<div className="flex flex-col lg:flex-row items-center justify-center px-8">
-			<CardImage flower={flower} isOpen={isOpen} isPlaceholder={false} />
+			<CardImage flower={flower} isOpen={isOpen} />
 			<CardInfo flower={flower} isOpen={isOpen} />
 			<CardTab isOpen={isOpen} setIsOpen={setIsOpen} />
 		</div>

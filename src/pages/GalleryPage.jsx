@@ -1,12 +1,12 @@
+import { useFlowers } from "../hooks/useFlowers.js"
 import GalleryItem from "../components/GalleryItem"
 import GalleryButton from "../components/GalleryButton.jsx"
-import { getFlowers } from "../data/data-service.js"
 
 function GalleryPage() {
-    const flowersLength = getFlowers().length
+    const flowers = useFlowers()
 
     return (
-        <div className="flex items-center justify-center min-h-screen px-0 lg:px-16">
+        <div className="flex justify-center min-h-screen px-0 lg:px-16">
             <div className="mx-auto inline-grid grid-flow-dense grid-cols-3 p-4 gap-4 transition-all duration-300 lg:grid-cols-5 lg:p-5 lg:gap-5 xl:p-6 xl:gap-6 xl:grid-cols-7">
                 <div className="row-span-3 col-span-3 col-start-1 row-start-4 flex flex-col items-left justify-center z-20 lg:col-start-2 xl:col-start-3">
                     <h1 className="text-center text-8xl outfit-regular mb-2 text-body transition-all duration-300 hover:scale-105 hover:text-emphasis hover:text-shadow-lg">Pixel Flowers</h1>
@@ -19,7 +19,7 @@ function GalleryPage() {
 
                 <div className="col-start-2 row-start-7 aspect-7/3 lg:col-start-3 xl:col-start-4"></div>
 
-                {getFlowers().map((flower, i) => (
+                {flowers.map((flower, i) => (
                     <GalleryItem flower={flower} className="row-span-2 aspect-square max-w-48" key={i} />
                 ))}
             </div>

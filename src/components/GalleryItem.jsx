@@ -1,14 +1,11 @@
 import { Link } from "react-router"
 
-const images = import.meta.glob('../assets/*.jpg', { eager: true, query: '?url', import: 'default' })
-
 function GalleryItem({ flower, className }) {
-    const imageUrl = images[`../assets/${flower.image}`]
 
-    if (flower.image) 
+    if (flower.imageUrl) 
     return <Link to={`/flowers/${flower.id}`} className={`${className} flex items-center justify-center bg-placeholder rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:scale-105`}>
         <img
-            src={imageUrl}
+            src={flower.imageUrl}
             alt={flower.common_name}
             className="rounded-lg size-full object-cover"
         />

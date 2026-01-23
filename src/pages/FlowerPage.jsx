@@ -1,12 +1,12 @@
 import { useParams } from "react-router"
-import { getFlowers } from "../data/data-service.js"
+import { useFlower } from "../hooks/useFlower.js"
 import Card from "../components/Card.jsx"
 import BackButton from "../components/BackButton.jsx"
 import NotFound from "../components/NotFound.jsx"
 
 function FlowerPage() {
     const { id } = useParams()
-    const flower = getFlowers().find(f => String(f.id) === id)
+    const flower = useFlower(id)
 
     if (!flower)
         return <NotFound title="Flower Not Found" message="The flower you are looking for does not exist." icon={

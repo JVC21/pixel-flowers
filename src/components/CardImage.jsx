@@ -1,14 +1,11 @@
 import clsx from "clsx"
 import { twMerge } from "tailwind-merge"
 
-const images = import.meta.glob('../assets/*.jpg', { eager: true, query: '?url', import: 'default' })
+function CardImage({ flower, isOpen, isPlaceholder = false }) {
 
-function CardImage({ flower, isOpen, isPlaceholder = true }) {
-    const imageUrl = images[`../assets/${isPlaceholder ? '480x480.jpg' : flower.image}`]
-
-    if (flower.image) 
+    if (flower.imageUrl && !isPlaceholder) 
     return <img 
-        src={imageUrl} 
+        src={flower.imageUrl}
         alt={flower.common_name}
         className={twMerge(clsx(
             // Base styles
