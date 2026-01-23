@@ -1,5 +1,7 @@
-- [ ] Change the text animation in the flower card
-- [ ] Refactor with clsx and twMerge
-- [ ] Connect to Firebase App (Cloud Firestore)
-- [ ] Select app icon
-- [ ] Instead of using the pages, use the body for the bg color
+- [ ] Seleccionar la paleta de colores
+- [ ] Añadir un botón para retroceder en la FlowerPage (sin perder al scroll)
+- [ ] Conectar a Firebase (Cloud Firestore)
+- [ ] Refactorizar con clsx y twMerge
+- [ ] Seleccionar un favicon
+- [x] En lugar de usar las páginas, poner el color de fondo en el body
+- [x] Cambiar la animación en el texto de la FlowerCard
