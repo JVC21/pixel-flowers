@@ -4,6 +4,21 @@
 /* Tailwind */
 @import "tailwindcss";
 
+/* Custom Color Palette - Pixel Flowers */
+@theme { /* Its right, no worries */  
+  --color-base: #d4d4d4; /* neutral-300 */
+  --color-accent: #a3a3a3; /* neutral-400 */
+  --color-placeholder: #a3a3a3; /* neutral-400 */
+  --color-tab: #525252; /* neutral-600 */
+  --color-canvas: #737373; /* neutral-500 */
+  
+  --color-xmuted: #a1a1a1; /* neutral-400 */
+  --color-muted: #737373; /* neutral-500 */
+  --color-body: #404040; /* neutral-700 */
+  --color-strong: #262626; /* neutral-800 */
+  --color-emphasis: #171717; /* neutral-900 */
+}
+
 .outfit-thin {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;

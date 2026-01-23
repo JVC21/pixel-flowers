@@ -12,7 +12,7 @@ function CardImage({ flower, isOpen, isPlaceholder = true }) {
             alt={flower.common_name}
             className={twMerge(clsx(
                 // Base styles
-                "bg-neutral-400 rounded-xl shadow-lg z-30",
+                "bg-placeholder rounded-xl shadow-lg z-30",
                 // Minimal screens
                 "size-80",
                 isOpen && "rounded-none rounded-t-xl",

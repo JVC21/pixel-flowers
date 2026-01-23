@@ -8,7 +8,7 @@ function CardTab({ isOpen, setIsOpen }) {
             className={twMerge(clsx(
                 // size: 18
                 // Base styles
-                "absolute flex flex-col justify-end bg-neutral-600 rounded-xl shadow-lg cursor-pointer z-10",
+                "absolute flex flex-col justify-end bg-tab rounded-xl shadow-lg cursor-pointer z-10",
                 // Minimal screens
                 "h-50 translate-y-28",
                 isOpen && "translate-y-65",
@@ -25,7 +25,7 @@ function CardTab({ isOpen, setIsOpen }) {
                 "transition-all duration-300"
             ))}
         >
-			<i className="fa-solid fa-angle-down text-neutral-800 lg:-rotate-90 text-2xl pt-1 pb-0.5 m-3"></i>
+			<i className="fa-solid fa-angle-down text-strong lg:-rotate-90 text-2xl pt-1 pb-0.5 m-3"></i>
 		</button>
     )
 }
