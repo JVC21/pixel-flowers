@@ -1,6 +1,7 @@
 import { useParams } from "react-router"
 import { getFlowers } from "../data/data-service.js"
 import Card from "../components/Card.jsx"
+import BackButton from "../components/BackButton.jsx"
 import NotFound from "../components/NotFound.jsx"
 
 function FlowerPage() {
@@ -14,6 +15,7 @@ function FlowerPage() {
 
     return (
         <div className="flex items-center justify-center min-h-screen min-w-screen bg-neutral-500 to-transparent">
+            <BackButton />
             <Card flower={flower} />
         </div>
     )
