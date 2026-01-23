@@ -25,7 +25,7 @@ function CardTab({ isOpen, setIsOpen }) {
                 "transition-all duration-300"
             ))}
         >
-			<i className="fa-solid fa-angle-down text-strong lg:-rotate-90 text-2xl pt-1 pb-0.5 m-3"></i>
+			<i className="fa-solid fa-angle-down text-body lg:-rotate-90 text-2xl pt-1 pb-0.5 m-3"></i>
 		</button>
     )
 }

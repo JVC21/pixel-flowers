@@ -4,20 +4,108 @@
 /* Tailwind */
 @import "tailwindcss";
 
-/* Custom Color Palette - Pixel Flowers */
-@theme { /* Its right, no worries */  
-  --color-base: #d4d4d4; /* neutral-300 */
-  --color-accent: #a3a3a3; /* neutral-400 */
-  --color-placeholder: #a3a3a3; /* neutral-400 */
-  --color-tab: #525252; /* neutral-600 */
-  --color-canvas: #737373; /* neutral-500 */
-  
-  --color-xmuted: #a1a1a1; /* neutral-400 */
-  --color-muted: #737373; /* neutral-500 */
-  --color-body: #404040; /* neutral-700 */
-  --color-strong: #262626; /* neutral-800 */
-  --color-emphasis: #171717; /* neutral-900 */
+/* Custom Color Palettes - Pixel Flowers */
+
+/* Neutral Theme */
+/* @theme {
+  --color-base: hsl(0, 0%, 83%);
+  --color-accent: hsl(0, 0%, 64%);
+  --color-canvas: hsl(0, 0%, 64%);
+  --color-placeholder: hsl(0, 0%, 45%);
+  --color-tab: hsl(0, 0%, 32%);
+  --color-xmuted: hsl(0, 0%, 64%);
+  --color-muted: hsl(0, 0%, 45%);
+  --color-disabled: hsl(0, 0%, 45%);
+  --color-body: hsl(0, 0%, 25%);
+  --color-strong: hsl(0, 0%, 15%);
+  --color-emphasis: hsl(0, 0%, 9%);
+} */
+
+@theme {
+  --color-base:         hsla(   0,   0%,  83%, 1.00 );
+  --color-accent:       hsla(   0,   0%,  64%, 1.00 );
+  --color-canvas:       hsla(   0,   0%,  64%, 1.00 );
+  --color-placeholder:  hsla(   0,   0%,  64%, 1.00 );
+  --color-tab:          hsla(   0,   0%,  45%, 1.00 );
+  --color-xmuted:       hsla(   0,   0%,  64%, 0.50 );
+  --color-muted:        hsla(   0,   0%,  45%, 1.00 );
+  --color-disabled:     hsla(   0,   0%,  45%, 0.50 );
+  --color-body:         hsla(   0,   0%,  25%, 1.00 );
+  --color-strong:       hsla(   0,   0%,  15%, 1.00 );
+  --color-emphasis:     hsla(   0,   0%,  45%, 1.00 );
 }
+
+/*Barrilette Theme*/
+/* Fixed v0.0 */
+/* @theme {
+  --color-base:         hsla(  50,  90%,  83%, 1.00 );
+  --color-accent:       hsla(   5, 100%,  64%, 1.00 );
+  --color-canvas:       hsla(  30,  90%,  64%, 1.00 );
+  --color-placeholder:  hsla(  30,  90%,  64%, 1.00 );
+  --color-tab:          hsla( 335,  80%,  45%, 1.00 );
+  --color-xmuted:       hsla(  90,  90%,  63%, 0.50 );
+  --color-muted:        hsla(  50,  60%,  45%, 1.00 );
+  --color-disabled:     hsla(   5,  80%,  45%, 0.50 );
+  --color-body:         hsla(   0,  40%,  25%, 1.00 );
+  --color-strong:       hsla(   5,  80%,  15%, 1.00 );
+  --color-emphasis:     hsla(   5,  90%,  45%, 1.00 );
+} */
+
+/* Fixed v0.1 - means (tab) */
+/* @theme {
+  --color-base: hsl(47 92% 83%);
+  --color-accent: hsl(5 100% 64%);
+  --color-placeholder: hsl(29 100% 64%);
+  --color-tab: hsl(334 98% 47%);
+  --color-canvas: hsl(47 50% 64%);
+  --color-xmuted: hsl(88 91.5% 63%);
+  --color-muted: hsl(49 88.6% 45%);
+  --color-body: hsl(0 40.7% 25%);
+  --color-strong: hsl(4 77% 15%);
+  --color-emphasis: hsl(334 98% 9%);
+} */
+
+/* Original */
+/* @theme {
+  --color-base: hsl(47 92% 95%);
+  --color-accent: hsl(5 100% 68%);
+  --color-placeholder: hsl(29 100% 77%);
+  --color-tab: hsl(334 98% 61%);
+  --color-canvas: hsl(5 100% 86%);
+  --color-xmuted: hsl(88 91.5% 68%);
+  --color-muted: hsl(49 88.6% 59%);
+  --color-body: hsl(0 40.7% 41%);
+  --color-strong: hsl(4 77% 41%);
+  --color-emphasis: hsl(334 98% 61%);
+} */
+
+/* Ems Theme */
+/* @theme {
+  --color-base: #fff7fb;
+  --color-accent: #f06292;
+  --color-placeholder: #f48fb1;
+  --color-tab: #ff4068;
+  --color-canvas: #fce4ec;
+  --color-xmuted: #f8bbd0;
+  --color-muted: #e2aefc;
+  --color-body: #611966;
+  --color-strong: #880e4f;
+  --color-emphasis: #b71c1c;
+} */
+
+/* Verdant Theme */
+/* @theme {
+  --color-base: #c8e6c9;
+  --color-accent: #66bb6a;
+  --color-placeholder: #a5d6a7;
+  --color-tab: #2e7d32;
+  --color-canvas: #388e3c;
+  --color-xmuted: #e8f5e9;
+  --color-muted: #66bb6a;
+  --color-body: #388e3c;
+  --color-strong: #1b5e20;
+  --color-emphasis: #004d40;
+} */
 
 .outfit-thin {
   font-family: "Outfit", sans-serif;
