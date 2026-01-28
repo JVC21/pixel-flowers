@@ -23,7 +23,7 @@ function CardInfo({ flower, isOpen }) {
             ))}
         >
             <div className="lg:min-w-54 xl:min-w-60">
-                <h2 className="cal-sans-regular text-body text-4xl tracking-wide mb-2">{flower.commonName ?? "Unknown"}</h2>
+                <h2 className="cal-sans-regular text-body text-4xl tracking-wide mb-1">{flower.commonName ?? "Unknown"}</h2>
                 <p className="outfit-regular-italic text-muted text-sm mb-6 xl:mb-8">{flower.scientificName ?? "No scientific name"}</p>
                 <p className="outfit-regular text-body text-justify">{flower.description ?? "No description available"}</p>
             </div>

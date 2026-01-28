@@ -9,7 +9,7 @@ function CardImage({ flower, isOpen, isPlaceholder = false }) {
         alt={flower.common_name}
         className={twMerge(clsx(
             // Base styles
-            "bg-placeholder rounded-xl shadow-lg z-30",
+            "bg-base rounded-xl shadow-lg z-30",
             // Minimal screens
             "size-80",
             isOpen && "rounded-none rounded-t-xl",
@@ -28,7 +28,7 @@ function CardImage({ flower, isOpen, isPlaceholder = false }) {
     return <div
         className={twMerge(clsx(
             // Base styles
-            "flex justify-center items-center bg-placeholder rounded-xl shadow-lg z-30",
+            "flex justify-center items-center bg-base rounded-xl shadow-lg z-30",
             // Minimal screens
             "size-80",
             isOpen && "rounded-none rounded-t-xl",
@@ -43,7 +43,7 @@ function CardImage({ flower, isOpen, isPlaceholder = false }) {
             "transition-all duration-300"
         ))}
     >
-        <i className="fa-solid fa-seedling text-muted text-7xl lg:text-8xl xl:text-9xl transition-all duration-300"></i>
+        <i className="fa-solid fa-seedling text-xmuted text-7xl lg:text-8xl xl:text-9xl transition-all duration-300"></i>
     </div>
 }
 
