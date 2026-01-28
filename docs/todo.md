@@ -1,7 +1,8 @@
-- [ ] Seleccionar la paleta de colores
+- [x] Seleccionar la paleta de colores
 - [ ] Añadir un botón para retroceder en la FlowerPage (sin perder al scroll)
-- [ ] Conectar a Firebase (Cloud Firestore)
+- [x] Conectar a Firebase (Cloud Firestore)
 - [ ] Refactorizar con clsx y twMerge
 - [ ] Seleccionar un favicon
 - [x] En lugar de usar las páginas, poner el color de fondo en el body
 - [x] Cambiar la animación en el texto de la FlowerCard
+- [ ] Arreglar el alto del body en la tarjeta de flor en móviles
