@@ -7,6 +7,12 @@ import path from 'path'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   const useLocalData = env.VITE_USE_LOCAL_DATA === 'true'
+  const palette = env.VITE_PALETTE || 'neutral'
+
+  const aliases = {
+    '@data-service': path.resolve(__dirname, useLocalData ? 'src/services/data-service.js' : 'src/services/firestore-service.js'),
+    '@palette': path.resolve(__dirname, `src/styles/palettes/${palette}.css`),
+  }
 
   return {
     plugins: [
@@ -14,10 +20,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
     ],
     resolve: {
-      alias: useLocalData ? {} : {
-        './services/data-service.js': path.resolve(__dirname, 'src/services/data-service.stub.js'),
-        '../services/data-service.js': path.resolve(__dirname, 'src/services/data-service.stub.js'),
-      }
+      alias: aliases
     }
   }
 })

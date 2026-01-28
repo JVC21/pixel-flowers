@@ -1,14 +1,10 @@
-import { useState, useEffect } from "react"
-import { getFlowers as getFlowersFromFirebase } from '../services/firestore-service.js'
-import { getFlowers as getFlowersFromLocal } from '../services/data-service.js'
-
-const useLocal = import.meta.env.VITE_USE_LOCAL_DATA === 'true'
+import { useState, useEffect } from 'react'
+import { getFlowers } from '@data-service'
 
 export function useFlowers() {
     const [flowers, setFlowers] = useState([])
 
     useEffect(() => {
-        const getFlowers = useLocal ? getFlowersFromLocal : getFlowersFromFirebase
         getFlowers().then(data => setFlowers(data))
     }, [])
 

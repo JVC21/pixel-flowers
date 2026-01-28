@@ -4,38 +4,8 @@
 /* Tailwind */
 @import "tailwindcss";
 
-/* Custom Color Palettes - Pixel Flowers */
-
-/* Neutral Theme */
-/* @theme {
-  --color-base:         hsla(   0,   0%,  83%, 1.00 );
-  --color-accent:       hsla(   0,   0%,  64%, 1.00 );
-  --color-canvas:       hsla(   0,   0%,  64%, 1.00 );
-  --color-placeholder:  hsla(   0,   0%,  64%, 1.00 );
-  --color-tab:          hsla(   0,   0%,  45%, 1.00 );
-  --color-xmuted:       hsla(   0,   0%,  64%, 0.50 );
-  --color-muted:        hsla(   0,   0%,  45%, 0.75 );
-  --color-disabled:     hsla(   0,   0%,  45%, 0.50 );
-  --color-body:         hsla(   0,   0%,  25%, 1.00 );
-  --color-strong:       hsla(   0,   0%,  15%, 1.00 );
-  --color-emphasis:     hsla(   0,   0%,  45%, 1.00 );
-} */
-
-/* PalEmta de Color - Fixed v1.1 */
-@theme {
-  --color-base:         hsla(  50,  80%,  90%, 1.00 );
-  --color-accent:       hsla(   5,  90%,  65%, 1.00 );
-  --color-canvas:       hsla( 355,  90%,  65%, 0.50 );
-  --color-placeholder:  hsla(  30,  90%,  65%, 1.00 );
-  --color-tab:          hsla( 335,  80%,  55%, 1.00 );
-  --color-xmuted:       hsla(  90,  90%,  65%, 0.75 );
-  --color-muted:        hsla(  50,  60%,  45%, 1.00 );
-  --color-disabled:     hsla(   5,  80%,  45%, 0.50 );
-  --color-body:         hsla(   0,  40%,  25%, 1.00 );
-  --color-strong:       hsla(   5,  80%,  15%, 1.00 );
-  --color-emphasis:     hsla(   5,  90%,  45%, 1.00 );
-  --color-custom:       hsla( 335, 100%,  60%, 1.00 );
-}
+/* Color Palette */
+@import "@palette";
 
 .outfit-thin {
   font-family: "Outfit", sans-serif;
